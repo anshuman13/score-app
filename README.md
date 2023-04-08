@@ -18,3 +18,5 @@ The application identifies a news score based on Heart rate, Respiratory Rate an
 
 1. In the frontend folder, Run `npm install`.
 2. Run `npm start` to start the front end application.
+
+<img width="523" alt="image" src="https://user-images.githubusercontent.com/10692115/230719036-a8eb9dd6-8de9-4b40-8d24-70b9e9794a37.png">
