@@ -1,3 +1,4 @@
 flask==2.2.3
 pandas==2.0.0
 flask-cors==3.0.10
+marshmallow==3.19.0
