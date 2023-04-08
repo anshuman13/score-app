@@ -4,7 +4,7 @@
 
 The application identifies a news score based on Heart rate, Respiratory Rate and Body Temprature
 
-## Local Development
+## Backend application
 
 1. Clone the repository.
 2. Make sure python3 and node 16 is installed in the system.
