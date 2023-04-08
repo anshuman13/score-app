@@ -16,5 +16,5 @@ The application identifies a news score based on Heart rate, Respiratory Rate an
 
 ## Front end application
 
-1. In the root folder, Run `npm install`.
+1. In the frontend folder, Run `npm install`.
 2. Run `npm start` to start the front end application.
