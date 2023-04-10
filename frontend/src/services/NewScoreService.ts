@@ -20,7 +20,7 @@ export const fetchScore = async (
   for (const property in newsScore) {
     payload.measurements.push({
       type: ScoreApiMapping[property as keyof typeof ScoreApiMapping],
-      value: parseInt(newsScore[property as keyof object]),
+      value: parseFloat(newsScore[property as keyof object]),
     });
   }
   return await http.post('/calculate_news_score', payload);

@@ -23,13 +23,14 @@ class ValueField(fields.Field):
         return value
 
     def _deserialize(self, value, attr, data, **kwargs):
-        if attr == 'value' and not isinstance(value, int):
+        if attr == 'value' and not isinstance(value, float) and not isinstance(value,
+                                                                               int):
             raise ValidationError("Value must contain only digits")
-        elif attr == 'value' and data['type'] == "TEMP" and value not in range(32, 43):
+        elif attr == 'value' and data['type'] == "TEMP" and not (31 < value <= 42):
             raise ValidationError("Body temperature is out of range")
-        elif attr == 'value' and data['type'] == "HR" and value not in range(26, 221):
+        elif attr == 'value' and data['type'] == "HR" and not (25 < value <= 220):
             raise ValidationError("Heart rate is out of range")
-        elif attr == 'value' and data['type'] == "RR" and value not in range(4, 60):
+        elif attr == 'value' and data['type'] == "RR" and not (3 < value <= 60):
             raise ValidationError("Respiratory rate is out of range")
         else:
             return value
